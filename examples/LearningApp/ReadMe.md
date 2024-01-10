@@ -34,24 +34,20 @@ For further information about implementing the MobilePush SDK, see the documenta
 2. Open Terminal and enter the following information.
 
         $ cd <path to>/LearningApp
-3. Open `LearningApp.xcworkspace` in Xcode.
-4. Add following package dependencies to your Xcode project (select File > Swift Packages > Add Package Dependency and enter its repository URL)
-* SFMCSDK https://github.com/salesforce-marketingcloud/sfmc-sdk-ios >= 1.0.0, Current version: 1.0.8
-* MobilePush https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm >= 8.0.0, Current version: 8.0.13
+3. Open `LearningApp.xcodeproj` file in Xcode.
 
-5. Pull in the MarketingCloudSDK/Sources/MarketingCloudSDKResources/MarketingCloudSDK.bundle manually to the project and link it with the binary in the build phase.
-
-6. Open `AppDelegate.swift` and replace the values for `appId`, `accessToken`, `appEndpoint` and `mid`. Find these values on the MobilePush Administration screen in Marketing Cloud.
+4. Open `AppDelegate.swift` and replace the values for `appId`, `accessToken`, `appEndpoint` and `mid`. Find these values on the MobilePush Administration screen in Marketing Cloud.
 
         let appID = "<your appID here>"
         let accessToken = "<your accessToken here>"
         let appEndpoint = URL(string: "<your appEndpoint here>")!
         let mid = "<your account MID here>"
 
-7. In the Xcode Project Navigator, select the LearningApp project.
-8. In the Project Editor, select the LearningApp target.
-9. On the General tab, set your unique Bundle Identifier and Signing values.
-10. Build and run the LearningApp project.
+5. In the Xcode Project Navigator, select the LearningApp project.
+6. In the Project Editor, select the LearningApp target.
+7. On the General tab, set your unique Bundle Identifier and Signing values.
+8. Do the same for the app extension, but suffix it with a unique value.
+8. Build and run the LearningApp project.
 
 **iOS SDK Development Notes**
 

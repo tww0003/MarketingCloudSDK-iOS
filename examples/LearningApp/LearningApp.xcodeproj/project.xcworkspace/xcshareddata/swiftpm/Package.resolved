@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "marketingcloudsdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS",
+      "state" : {
+        "branch" : "spm",
+        "revision" : "d3ea1cacaf5467086e49dc6f5c11bb240b56c6aa"
+      }
+    },
+    {
+      "identity" : "sfmc-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/salesforce-marketingcloud/sfmc-sdk-ios",
+      "state" : {
+        "revision" : "9182e49faf36dffa28ebfc73e4dc816afff97af7",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
